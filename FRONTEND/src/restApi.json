@@ -1,0 +1,442 @@
+{
+    "data": [
+        {"ourQualities" : [
+            {
+                "id": 1,
+                "image": "./quality_food.svg",
+                "title": "QUALITY FOOD",
+                "description": "Only the freshest ingredients, cooked to perfection."
+            },
+
+            {
+                "id": 2,
+                "image": "./super_taste.svg",
+                "title": "SUPER TASTE",
+                "description": "Every bite bursts with irresistible flavor."
+            },
+            {
+                "id": 3,
+                "image": "./fast_delivery.svg",
+                "title": "FAST DELIVERY",
+                "description": "Your favorites, at your doorstep in no time." 
+            }
+        ],
+        "dishes": [
+            {
+                "id": 1,
+                "image": "./dinner1.png",
+                "title": "DAL CHAWAL",
+                "category": "Dinner"
+            },
+            {
+                "id": 2,
+                "image": "./dinner2.png",
+                "title": "DAL MAKHANI NAAN",
+                "category": "Dinner"
+            },
+            {
+                "id": 3,
+                "image": "./breakfast1.png",
+                "title": "PASTA",
+                "category": "Breakfast"
+            },
+            {
+                "id": 4,
+                "image": "./dinner3.png",
+                "title": "KHEER",
+                "category": "Dinner"
+            },
+            {
+                "id": 5,
+                "image": "./lunch1.png",
+                "title": "VEG BURRITO",
+                "category": "Lunch"
+            },
+            {
+                "id": 6,
+                "image": "./dinner4.png",
+                "title": "TOMATO SOUP",
+                "category": "Dinner"
+            },
+            {
+                "id": 7,
+                "image": "./dinner5.png",
+                "title": "CHEESECAKE",
+                "category": "Dinner"
+            },
+            {
+                "id": 8,
+                "image": "./dinner6.png",
+                "title": "VEG BIRYANI",
+                "category": "Dinner"
+            }
+        ],
+        "team": [
+            {
+                "id": 1,
+                "image": "./team_member_1.png",
+                "name": "JOHNATHAN TYLER",
+                "designation": "Founder & Head Chef"
+            },
+            {
+                "id": 2,
+                "image": "./team_member_2.png",
+                "name": "WADE WARREN",
+                "designation": "Sous Chef"
+            },
+            {
+                "id": 3,
+                "image": "./team_member_3.png",
+                "name": "JHON DOE",
+                "designation": "Fast Food Chef"
+            },
+            {
+                "id": 4,
+                "image": "./team_member_4.png",
+                "name": "ALEX COAL",
+                "designation": "Senior Chef"
+            }
+        ],
+        "testimonials": [
+            {
+                "id": 1,
+                "image": "./review1.png",
+                "description": "Morbi nulla nec dui lacus, in. Libero in pretium metus massa. Sodales dignissim vitae mauris varius faucibus. Eleifend dui, non laoreet ac luctus facilisis diam. Enim scelerisque vel at id viverra tellus.",
+                "rating": 4,
+                "userName": "Jane Cooper"
+            },
+            {
+                "id": 2,
+                "image": "./review2.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 4.5,
+                "userName": "Esther Howard"
+            },
+            {
+                "id": 3,
+                "image": "./review3.png",
+                "description": "Tortor vel nunc netus pharetra enim, enim dolor mauris in. Sit nam fringilla in egestas. Libero condimentum quis in vulputate adipiscing venenatis augue. Venenatis faucibus.",
+                "rating": 5,
+                "userName": "Guy Hawkins"
+            }
+        ],
+        "who_we_are": [
+            {
+                "id": 1,
+                "number": "14",
+                "title": "Restaurants"
+            },
+            {
+                "id": 2,
+                "number": "20",
+                "title": "Chef In Kitchen"
+            },
+            {
+                "id": 3,
+                "number": "08",
+                "title": "Years Of Experience"
+            },
+            {
+                "id": 4,
+                "number": "200",
+                "title": "Food Dishes"
+            }
+        ],
+        "navbarLinks": [
+            {
+                "id": 1,
+                "title": "HOME",
+                "link": "heroSection"
+            },
+            {
+                "id": 2,
+                "title": "ABOUT US",
+                "link": "about"
+            },
+            {
+                "id": 3,
+                "title": "SERVICES",
+                "link": "qualities"
+            },
+            {
+                "id": 4,
+                "title": "TEAM",
+                "link": "team"
+            },
+            {
+                "id": 5,
+                "title": "RESERVATION",
+                "link": "reservation"
+            }
+        ],
+
+        "breakfast": [
+                {
+                    "id": 1,
+                    "name": "Puri Bhaji",
+                    "image": "./puri-bhaji.png" ,
+                    "price": "₹70",
+                    "description": "Deep-fried bread served with spiced potato curry."
+                },
+                { 
+                    "id":2,
+                    "name": "Aloo Paratha",
+                    "image": "./Aloo-parantha.png",
+                    "price": "₹80",
+                    "description": "Stuffed whole wheat bread with spiced mashed potatoes."
+                },
+                {
+                    "id": 3,
+                    "name": "Idli Sambhar",
+                    "image": "./Idli-sambhar.png",
+                    "price": "₹70",
+                    "description": "Steamed rice cakes served with lentil soup and coconut chutney."
+                },
+                {
+                    "id": 4,
+                    "name": "Poha",
+                    "image": "./Poha.png",
+                    "price": "₹60",
+                    "description": "Flattened rice cooked with onions, peas, and mild spices."
+                },
+                {
+                    "id": 5,
+                    "name": "Upma",
+                    "image": "./Upma.png",
+                    "price": "₹65",
+                    "description": "Semolina cooked with vegetables and tempered spices."
+                },
+                {
+                    "id": 6,
+                    "name": "Masala Dosa",
+                    "image": "./Masala-dosa.png",
+                    "price": "₹90",
+                    "description": "Crispy rice crepe filled with spiced potato filling."
+                }
+            ],
+            "lunch": [
+                {
+                    "id": 1,
+                    "name": "Paneer Butter Masala",
+                    "image": "./Paneer-Butter-Masala.png",
+                    "price": "₹320",
+                    "description": "Paneer cubes in a creamy tomato gravy."
+                },
+                {
+                    "id": 2,
+                    "name": "Chole Bhature",
+                    "image": "./Chole-Bhature.png",
+                    "price": "₹150",
+                    "description": "Spicy chickpeas served with deep-fried bread."
+                },
+                {
+                    "id": 3,
+                    "name": "Veg Biryani",
+                    "image": "./Veg-Biryani.png",
+                    "price": "₹280",
+                    "description": "Basmati rice with vegetables and aromatic spices."
+                },
+                {   
+                    "id": 4,
+                    "name": "Palak Paneer",
+                    "image": "./Palak-Paneer.png",
+                    "price": "₹250",
+                    "description": "Paneer cubes cooked in creamy spinach gravy."
+                },
+                {
+                    "id": 5,
+                    "name": "Rajma Chawal",
+                    "image": "./Rajma-Chawal.png",
+                    "price": "₹200",
+                    "description": "Kidney bean curry served with steamed rice."
+                }
+            ],
+            "dinner": [
+                {
+                    "id": 1,
+                    "name": "Dal Makhani",
+                    "image": "./Dal-Makhni.png",
+                    "price": "₹250",
+                    "description": "Black lentils slow-cooked with butter and cream."
+                },
+                {
+                    "id": 2,
+                    "name": "Shahi Paneer",
+                    "image": "./Shahi-Paneer.png",
+                    "price": "₹300",
+                    "description": "Paneer in a rich cashew and cream-based sauce."
+                },
+                {
+                    "id": 3,
+                    "name": "Jeera Rice",
+                    "image": "./Jeera-Rice.png",
+                    "price": "₹150",
+                    "description": "Basmati rice cooked with cumin seeds."
+                },
+                {
+                    "id": 4,
+                    "name": "Veg Pulao",
+                    "image": "./Veg-Pulao.png",
+                    "price": "₹180",
+                    "description": "Rice cooked with seasonal vegetables."
+                },
+                {
+                    "id": 5,
+                    "name": "Bhindi Masala",
+                    "image": "./Bhindi-Masala.png",
+                    "price": "₹200",
+                    "description": "Okra stir-fried with onions and spices."
+                }
+            ],
+            "snacks": [
+                {
+                    "id": 1,
+                    "name": "Samosa",
+                    "image": "./Samosa.png",
+                    "price": "₹30",
+                    "description": "Crispy pastry filled with spicy potato filling."
+                },
+                {
+                    "id": 2,
+                    "name": "Pav Bhaji",
+                    "image": "././Pav-Bhaji.png",
+                    "price": "₹120",
+                    "description": "Spicy mashed vegetables served with buttered buns."
+                },
+                {
+                    "id": 3,
+                    "name": "Bhel Puri",
+                    "image": "./Bhel-Puri.png",
+                    "price": "₹50",
+                    "description": "Puffed rice with tangy tamarind chutney and vegetables."
+                },
+                {
+                    "id": 4,
+                    "name": "Vada Pav",
+                    "image": "./Vada-Pav.png",
+                    "price": "₹40",
+                    "description": "Fried potato dumpling served in a bun with chutneys."
+                },
+                {
+                    "id": 5,
+                    "name": "Kachori",
+                    "image": "./Kachori.png",
+                    "price": "₹35",
+                    "description": "Flaky pastry stuffed with spiced lentils."
+                }
+            ],
+            "starters": [
+                {
+                    "id": 1,
+                    "name": "Paneer Tikka",
+                    "image": "./Paneer-Tikka.png",
+                    "price": "₹250",
+                    "description": "Grilled paneer marinated in spices."
+                },
+                {
+                    "id": 2,
+                    "name": "Hara Bhara Kebab",
+                    "image": "./Hara-Bhara-Kebab.png",
+                    "price": "₹200",
+                    "description": "Spinach and peas patties."
+                },
+                {
+                    "id": 3,
+                    "name": "Veg Manchurian",
+                    "image": "./Veg-Manchurian.png",
+                    "price": "₹220",
+                    "description": "Vegetable balls in Indo-Chinese sauce."
+                },
+                {   
+                    "id": 4,
+                    "name": "Cheese Corn Balls",
+                    "image": "./Cheese-Corn-Balls.png",
+                    "price": "₹180",
+                    "description": "Crispy fried balls of cheese and corn."
+                },
+                {
+                    "id": 5,
+                    "name": "Tandoori Mushroom",
+                    "image": "./Tandoori-Mushroom.png",
+                    "price": "₹230",
+                    "description": "Mushrooms marinated in tandoori spices."
+                }
+            ],
+            "desserts": [
+                {
+                    "id": 1,
+                    "name": "Gulab Jamun",
+                    "image": "././Gulab-Jamun.png",
+                    "price": "₹120",
+                    "description": "Milk dumplings in sugar syrup."
+                },
+                {
+                    "id": 2,
+                    "name": "Rasgulla",
+                    "image": "././Rasgulla.png",
+                    "price": "₹130",
+                    "description": "Spongy cottage cheese dumplings."
+                },
+                {   
+                    "id": 3,
+                    "name": "Kesar Pista Kulfi",
+                    "image": "././Kesar-Pista-Kulfi.png",
+                    "price": "₹150",
+                    "description": "Saffron and pistachio-flavored ice cream."
+                },
+                {
+                    "id": 4,
+                    "name": "Gajar Ka Halwa",
+                    "image": "./Gajar-Ka-Halwa.png",
+                    "price": "₹140",
+                    "description": "Carrot pudding cooked in milk."
+                },
+                {
+                    "id": 5,
+                    "name": "Jalebi",
+                    "image": "./Jalebi.png",
+                    "price": "₹100",
+                    "description": "Sweet crispy fried coils in sugar syrup."
+                }
+            ],
+            "shakesdrinks": [
+                {
+                    "id": 1,
+                    "name": "Mango Lassi",
+                    "image": "./Mango-Lassi.png",
+                    "price": "₹100",
+                    "description": "Yogurt drink with mango pulp."
+                },
+                {
+                    "id": 2,
+                    "name": "Cold Coffee",
+                    "image": "./Cold-Coffee.png",
+                    "price": "₹120",
+                    "description": "Chilled coffee with milk."
+                },
+                {
+                    "id": 3,
+                    "name": "Masala Chai",
+                    "image": "./Masala-Chai.png",
+                    "price": "₹60",
+                    "description": "Indian spiced tea."
+                },
+                {
+                    "id": 4,
+                    "name": "Badam Milk",
+                    "image": "./Badam-Milk.png",
+                    "price": "₹90",
+                    "description": "Almond flavored milk drink."
+                },
+                {
+                    "id": 5,
+                    "name": "Chocolate Shake",
+                    "image": "./Chocolate-Milkshake.png",
+                    "price": "₹130",
+                    "description": "Thick shake with chocolate syrup."
+                }
+            ]
+    
+    } 
+    ]
+}
