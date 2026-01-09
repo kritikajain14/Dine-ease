@@ -20,7 +20,7 @@ const Success = () => {
 
       try {
         const { data } = await axios.post(
-          "http://localhost:3000/api/v1/reservation/save-after-payment",
+          `${API_URL}/api/v1/reservation/save-after-payment`,
           { sessionId },
           {
             headers: { "Content-Type": "application/json" },
