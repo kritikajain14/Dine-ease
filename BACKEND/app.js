@@ -8,21 +8,35 @@ import { dbConnection } from "./database/dbConnection.js";
 const app = express();
 dotenv.config({ path: "./config/config.env" });
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://*.vercel.app"
+];
+
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
-    methods: ["POST"],
+    origin: function (origin, callback) {
+      if (!origin) return callback(null, true);
+
+      if (
+        origin === "http://localhost:5173" ||
+        origin.endsWith(".vercel.app")
+      ) {
+        return callback(null, true);
+      }
+
+      return callback(new Error("Not allowed by CORS"), false);
+    },
+    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
     credentials: true,
   })
 );
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/v1/reservation", reservationRouter);
-// app.get("/", (req, res, next)=>{return res.status(200).json({
-//   success: true,
-//   message: "HELLO WORLD AGAIN"
-// })})
+
 
 dbConnection();
 

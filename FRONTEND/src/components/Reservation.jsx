@@ -40,14 +40,28 @@ const Reservation = () => {
 
   try {
     // Send data to backend to create Stripe Checkout Session
-    const { data } = await axios.post(
-      "http://localhost:3000/api/v1/reservation/pay",
-      { firstName, lastName, email, phone, date, time },
-      {
-        headers: { "Content-Type": "application/json" },
-        withCredentials: true,
-      }
-    );
+    // const { data } = await axios.post(
+    //   "http://localhost:3000/api/v1/reservation/pay",
+    //   { firstName, lastName, email, phone, date, time },
+    //   {
+    //     headers: { "Content-Type": "application/json" },
+    //     withCredentials: true,
+    //   }
+    // );
+
+    await fetch(`${API_URL}/api/v1/reservation/checkout`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    firstName,
+    lastName,
+    email,
+    date,
+    time,
+    phone,
+    successUrl: `${window.location.origin}/success`
+  })
+});
 
     // Redirect to Stripe Checkout
     window.location.href = data.url;

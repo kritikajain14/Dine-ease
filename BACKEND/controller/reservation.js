@@ -16,26 +16,45 @@ export const createCheckoutSession = async (req, res, next) => {
   }
 
   try {
-    const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
-      mode: "payment",
-      line_items: [
-        {
-          price_data: {
-            currency: "inr",
-            product_data: {
-              name: `Table Reservation - ${firstName} ${lastName}`,
-            },
-            unit_amount: 50000, // ₹500 in paise
-          },
-          quantity: 1,
-        },
-      ],
-      success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
-      // cancel_url: `${process.env.FRONTEND_URL}/cancel`,
-      metadata: { firstName, lastName, email, date, time, phone },
-    });
+    // const session = await stripe.checkout.sessions.create({
+    //   payment_method_types: ["card"],
+    //   mode: "payment",
+    //   line_items: [
+    //     {
+    //       price_data: {
+    //         currency: "inr",
+    //         product_data: {
+    //           name: `Table Reservation - ${firstName} ${lastName}`,
+    //         },
+    //         unit_amount: 50000, // ₹500 in paise
+    //       },
+    //       quantity: 1,
+    //     },
+    //   ],
+    //   success_url: `${process.env.FRONTEND_URL}/success?session_id={CHECKOUT_SESSION_ID}`,
+    //   // cancel_url: `${process.env.FRONTEND_URL}/cancel`,
+    //   metadata: { firstName, lastName, email, date, time, phone },
+    // });
 
+
+    const session = await stripe.checkout.sessions.create({
+  payment_method_types: ["card"],
+  mode: "payment",
+  line_items: [
+    {
+      price_data: {
+        currency: "inr",
+        product_data: {
+          name: `Table Reservation - ${firstName} ${lastName}`,
+        },
+        unit_amount: 50000,
+      },
+      quantity: 1,
+    },
+  ],
+  success_url: `${successUrl}?session_id={CHECKOUT_SESSION_ID}`,
+  metadata: { firstName, lastName, email, date, time, phone },
+});
     res.json({ url: session.url });
   } catch (error) {
     next(error);
