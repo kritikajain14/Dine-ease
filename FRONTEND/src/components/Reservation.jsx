@@ -49,7 +49,9 @@ const Reservation = () => {
     //   }
     // );
 
-    await fetch(`${API_URL}/api/v1/reservation/checkout`, {
+    const API_URL = import.meta.env.VITE_API_URL;
+
+  await fetch(`${API_URL}/api/v1/reservation/checkout`, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({

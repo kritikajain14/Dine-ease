@@ -19,6 +19,7 @@ const Success = () => {
       }
 
       try {
+        const API_URL = import.meta.env.VITE_API_URL;
         const { data } = await axios.post(
           `${API_URL}/api/v1/reservation/save-after-payment`,
           { sessionId },
